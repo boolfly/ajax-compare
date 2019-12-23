@@ -1,0 +1,37 @@
+<?php
+/***********************************************************************
+ * *
+ *  *
+ *  * @copyright Copyright © Boolfly. All rights reserved.
+ *  * See COPYING.txt for license details.
+ *  * @author    info@boolfly.com
+ * *
+ */
+
+/** @var $block \Magento\Catalog\Block\Product\View\Addto\Compare */
+$addToCompareText = $block->escapeHtml(__('Add to Compare'));
+$addedText = $block->escapeHtml(__('Added'));
+?>
+<span class="wrapper-action" data-role="compare-product" data-bind="scope: 'ajaxCompare'">
+    <a href="#"
+       class="action tocompare"
+       title="<?= $addToCompareText ?>"
+       aria-label="<?= $addToCompareText ?>"
+       data-post='<?= /* @noEscape */ $block->getPostDataParams() ?>'
+       data-product-id="<?= $block->getProduct()->getId();?>"
+       data-bind="event: {
+            mage_data_post_before_send: beforeSendAjaxEvent,
+            mage_data_post_done:  completeAjaxEvent
+       }, css: {'active': added($element)},
+          attr: {
+            title: added($element) ? '<?= $addedText ?>' : '<?= $addToCompareText ?>',
+            'aria-label': added($element) ?  '<?= $addedText ?>' : '<?= $addToCompareText ?>',
+          }"
+       role="button">
+        <span data-bind="attr: {
+            'data-product-id': '<?= $block->getProduct()->getId();?>'
+        }, text: added($element)? '<?= $addedText ?>' : '<?= $addToCompareText ?>'">
+            <?= $addToCompareText ?>
+        </span>
+    </a>
+</span>
