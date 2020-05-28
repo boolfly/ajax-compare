@@ -21,12 +21,12 @@ Magento 2 Extensions
 ---
 
 - [Ajax Wishlist](https://github.com/boolfly/ajax-wishlist) 
-- [Quick View for Magento 2](https://github.com/boolfly/quick-view)
-- [Banner Slider for Magento 2](https://github.com/boolfly/banner-slider)
+- [Quick View](https://github.com/boolfly/quick-view)
+- [Banner Slider](https://github.com/boolfly/banner-slider)
 - [Product Label](https://github.com/boolfly/product-label) 
-- [ZaloPay for Magento 2](https://github.com/boolfly/zalo-pay) 
-- [Momo for Magento 2](https://github.com/boolfly/momo-wallet) 
-- [Blog for Magento 2](https://github.com/boolfly/blog)
+- [ZaloPay](https://github.com/boolfly/zalo-pay) 
+- [Momo](https://github.com/boolfly/momo-wallet) 
+- [Blog](https://github.com/boolfly/blog)
 - [Brand](https://github.com/boolfly/brand) 
 - [Product Question](https://github.com/boolfly/product-question) 
 - [Sales Sequence](https://github.com/boolfly/sales-sequence) 
